@@ -14,7 +14,7 @@ public class Book {
 
 
     public void printInfo(){
-        System.out.printf("name : %s, author: %s, price: %d",
+        System.out.printf("name : %s, author: %s, price: %d \n",
                 this.name,
                 author.name,
                 this.price
