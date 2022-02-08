@@ -8,7 +8,7 @@ public class Author {
         this.name = name;
         this.email = email;
     }
-    public void printInfo(){
+    public void printAuthorInfo(){
         System.out.printf(
                 "name: %s, email: %s",
                 this.name,
@@ -18,6 +18,6 @@ public class Author {
 
     public static void main(String[] args) {
         Author author = new Author("Arman","author@gmail.com");
-        author.printInfo();
+        author.printAuthorInfo();
     }
 }
