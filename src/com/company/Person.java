@@ -12,8 +12,11 @@ public class Person {
         this.address = userAddress;
 
     }
+    public void printInfo(){
+        System.out.println(this.name + " "+this.age+" "+this.address);
+    }
     public Person(){
-
+        super();
     }
 
 
@@ -22,9 +25,9 @@ public class Person {
         user1.name = "Gor";
         user1.age = 24;
         user1.address = "Armenia";
-        System.out.println(user1.name+ " "+user1.age+ " "+user1.address);
+        user1.printInfo();
         Person user2 = new Person("Gagik",45,"Iraq");
-        System.out.println(user2.name+ " "+user2.age+ " "+user2.address);
+        user2.printInfo();
     }
 
 //    public void setInfo(String userName,int userAge,String userAddress){
@@ -47,8 +50,4 @@ public class Person {
 //
 //
 //    }
-
-
-
 }
-
