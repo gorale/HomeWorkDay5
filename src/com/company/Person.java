@@ -12,8 +12,8 @@ public class Person {
         this.address = userAddress;
 
     }
-    public void printInfo(){
-        System.out.println(this.name + " "+this.age+" "+this.address);
+    public static void printInfo(Person person){
+        System.out.println(person.name + " "+person.age+" "+person.address);
     }
     public Person(){
         super();
@@ -25,9 +25,9 @@ public class Person {
         user1.name = "Gor";
         user1.age = 24;
         user1.address = "Armenia";
-        user1.printInfo();
+        user1.printInfo(user1);
         Person user2 = new Person("Gagik",45,"Iraq");
-        user2.printInfo();
+        user2.printInfo(user2);
     }
 
 //    public void setInfo(String userName,int userAge,String userAddress){
