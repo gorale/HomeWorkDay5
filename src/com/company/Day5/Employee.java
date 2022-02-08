@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Day5;
 
 public class Employee {
     int id;
